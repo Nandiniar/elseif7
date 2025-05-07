@@ -1,0 +1,33 @@
+<h1>Welcome!</h1>
+<button (click)="redb()">Red</button>
+<button (click)="greenb()">Green</button>
+<button (click)="yellowb()">Yellow</button>
+<button (click)="otherb()">Other</button>
+<input type="text" (input)="gete($event)"value="write the number">
+
+
+<br>
+<br>
+
+
+@if(color=='red'  || color == '1'){
+  <div style="background-color:red;height:100px;width:100px">
+
+  </div>
+}
+@else if(color=='green' || color=='2'){
+<div style="background-color:green;height:100px;width:100px">
+
+</div>
+}
+
+@else if(color=='yellow' || color=='3'){
+  <div style="background-color:yellow;height:100px;width:100px">
+
+  </div>
+}
+@else {
+  <div style="background-color:palevioletred;height:100px;width:100px">
+
+  </div>
+}
